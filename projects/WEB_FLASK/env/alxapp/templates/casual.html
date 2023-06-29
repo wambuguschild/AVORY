@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Casual Photos</title>
+</head>
+<body>
+    <h1>Casual Photos</h1>
+    <ul>
+        {% for picture in pictures %}
+            <li><img src="{{ url_for('static', filename='images/' + picture['filename']) }}" alt="Sample Image" width="200"></li>
+        {% endfor %}
+    </ul>
+    <p><a href="/">Back to main page</a></p>
+</body>
+</html>

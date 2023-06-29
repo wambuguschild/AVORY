@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Search</title>
+</head>
+<body>
+    <h1>Image Search</h1>
+    <form>
+        <label for="searched_style">Select a style:</label>
+        <select id="searched_style" name="searched_style">
+            <option value="casual">Casual</option>
+            <option value="official">Official</option>
+        </select>
+        <button type="button" onclick="navigateToPage()">Search</button>
+    </form>
+
+    <h2>Images</h2>
+    <div id="imageContainer">
+        <!-- Images will be displayed here -->
+    </div>
+
+    <script>
+        // Function to navigate to the selected page based on the selected style
+        function navigateToPage() {
+            var selectElement = document.getElementById("searched_style");
+            var selectedStyle = selectElement.options[selectElement.selectedIndex].value;
+
+
+            if (selectedStyle === 'official') {
+                window.location.href = '/fashion_recommendation/official';
+            } else if (selectedStyle === 'casual') {
+                window.location.href = '/fashion_recommendation/casual';
+            }
+        }
+    </script>
+
+</body>
+</html>

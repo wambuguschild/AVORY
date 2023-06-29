@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    
+    <div>
+        <h2>Profile Details</h2>
+        <p>Username: {{ profile.username }}</p>
+        <p>Name: {{ profile.name }}</p>
+        <p>Email: {{ profile.email }}</p>
+        <p>Date of Birth: {{ profile.date_of_birth }}</p>
+        <p>Profile Picture: <img src="{{ profile.profile_picture }}" alt="Profile Picture"></p>
+        <p>Height: {{ profile.height }}</p>
+        <p>Weight: {{ profile.weight }}</p>
+        <p>Complexion: {{ profile.complexion }}</p>
+        <p>Bio: {{ profile.bio }}</p>
+    </div>
+    <div><a href="/profile/{{ profile.id }}" class="btn btn-primary">Edit Profile</a></div>
+</body>
+</html>
