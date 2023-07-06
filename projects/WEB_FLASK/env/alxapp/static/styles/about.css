@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: #0f0f0f;
+}
+
+
+body {
+    background: url("../images/website.jpg");
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: right;
+    justify-content: space-between;
+  }
+
+  .navbar .all-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .all-links li {
+    position: left;
+    list-style: none;
+  }
+  
+
+  header a, footer a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 20px 0;
+    display: inline-block;
+  }
+  
+  header a:hover, footer a:hover {
+    color: #ddd;
+  }
+
+  section.about {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+  
+  
+  .about .company-info {
+    margin-top: 30px;
+  }
+  
+  .about h3 {
+    margin: 30px 0 10px;
+  }
+  
+  .about .team {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .about .team ul {
+    padding-left: 20px;
+  }
+
+  .about .row {
+    padding: 0 10px;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 0;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  section > p {
+    text-align: center;
+  }

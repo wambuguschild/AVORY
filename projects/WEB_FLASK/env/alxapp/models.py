@@ -11,6 +11,7 @@ class Profile(db.Model):
     age = db.Column(db.Integer)
     bio = db.Column(db.Text)
     
+    
 
     def __repr__(self):
         return f"<Profile {self.username}>"

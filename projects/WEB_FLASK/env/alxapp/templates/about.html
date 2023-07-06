@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles/about.css">
+</head>
+<header>
+<nav class="navbar">
+    <ul class="all-links">
+        <li><a href="{{ url_for('views.home') }}">Home</a></li>
+        <li><a href="{{ url_for('auth.signup') }}">Signup</a></li>
+        <li><a href="#testimonials">testimonials</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
+</header>
+
+<body>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Discover our story in providing camping services.</p>
+        <div class="row company-info">
+          <h3>Our Story</h3>
+          <p>Step into the world of fashion exploration with us, where we have been dedicated to providing exceptional fashion recommendations and personalized styling services for style enthusiasts for over a decade. At our core, we are committed to delivering the highest quality of fashion expertise and ensuring that every individual can rely on us for their style needs.
+  
+              Since our inception, our mission has been to empower individuals to embrace their unique style and express themselves with confidence. We understand that fashion is a powerful tool for self-expression and self-discovery, and that's why we leave no stone unturned in curating the finest recommendations and trend insights.
+              
+              Our team of fashion connoisseurs meticulously analyzes the latest trends, explores diverse styles, and dives deep into the realm of fashion, bringing you curated suggestions tailored to your preferences and occasions. Whether you're seeking an elegant ensemble for a special event or seeking everyday inspiration, we've got you covered.</p>
+        </div>
+        <div class="row mission-vision">
+          <h3>Our Mission</h3>
+          <p>Our mission is to curate a seamless fashion experience by harnessing the power of technology and expert knowledge. We strive to inspire, guide, and connect fashion enthusiasts, providing them with tailored dress codes, trend insights, and a platform for self-discovery. Through our intuitive interface and data-driven recommendations, we aim to simplify the process of finding the perfect outfit for any occasion, enabling our users to embrace their individuality and unlock their full fashion potential. Together, we envision a world where everyone can effortlessly navigate the ever-changing landscape of fashion, discovering their authentic style and radiating confidence in every step they take.</p>
+          <h3>Our Vision</h3>
+          <p>To empower individuals to express their unique style and elevate their confidence through personalized fashion recommendations, fostering a global community where creativity and self-expression thrive.</p>
+        </div>
+        <div class="row team">
+          <h3>Our Team</h3>
+          <ul>
+            <li>John Doe - Founder and CEO</li>
+            <li>Jane Smith - Gear Specialist</li>
+            <li>Mark Johnson - Customer Representative</li>
+            <li>Sarah Brown - Operations Manager</li>
+          </ul>
+        </div>
+      </section>
+</body>
+</html>

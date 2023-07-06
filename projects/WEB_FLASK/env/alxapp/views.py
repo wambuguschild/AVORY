@@ -6,6 +6,14 @@ from . import db
 
 views = Blueprint ('views',__name__)
 
+@views.route('/')
+def home():
+    return render_template("index.html")
+
+@views.route('/about_us')
+def about_us():
+    return render_template("about.html")
+
 @views.route('/dashboard/<int:profile_id>', methods=['GET', 'POST'])
 def dashboard(profile_id):
     profile = Profile.query.get(profile_id)
