@@ -2,22 +2,47 @@
 <html>
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../static/styles/dashboard.css">
 </head>
 <body>
-    <h1>Dashboard</h1>
     
-    <div>
-        <h2>Profile Details</h2>
-        <p>Username: {{ profile.username }}</p>
-        <p>Name: {{ profile.name }}</p>
-        <p>Email: {{ profile.email }}</p>
-        <p>Date of Birth: {{ profile.date_of_birth }}</p>
-        <p>Profile Picture: <img src="{{ profile.profile_picture }}" alt="Profile Picture"></p>
-        <p>Height: {{ profile.height }}</p>
-        <p>Weight: {{ profile.weight }}</p>
-        <p>Complexion: {{ profile.complexion }}</p>
-        <p>Bio: {{ profile.bio }}</p>
+    <div class="sidenav">
+        <a href="#"><i class="fas fa-user"></i> Profile</a>
+        <a href="#"><i class="fas fa-envelope"></i> Chats</a>
+        <a href="#"><i class="fas fa-search"></i> Find Dress Code</a>
+        <a href="#"><i class="far fa-heart"></i> Saved</a>
+        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
     </div>
-    <div><a href="/profile/{{ profile.id }}" class="btn btn-primary">Edit Profile</a></div>
+    <div class="main-content">
+        <h1>Dashboard</h1> 
+          
+        <div class="user-details">
+            <h2>Profile Details</h2>
+            <div class="profile-picture-container">
+                <img src="../static/images/fa-user.png" alt="Profile Picture" class="profile-picture">
+            </div>
+            <div class="upload-container">
+                <h2>Upload Profile Picture</h2>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="profile-picture">
+                <input type="submit" value="Upload">
+                </form>
+            </div>
+            
+            
+            <p>Username: {{ profile.username }}</p>
+            <p>Email: {{ profile.email }}</p>
+            <div class="button-container">
+                <a href="/profile/{{ profile.id }}"><button type="submit">Edit Profile</button></a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
